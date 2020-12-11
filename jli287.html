@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DUNEDIN DAIRY!!</title>
+    <link rel="stylesheet" href="jli287.css">
+    <script src="jli287.js"></script>
+</head>
+<body>
+    <img src="http://redsox.uoa.auckland.ac.nz/ds/logo.svg" width="200" height="120" class="center" alt="logo" />
+    <h1 id="title"> Weclome to our store!!</h1>
+    <table width="100%" style="text-align:center;">
+        <tr style="font-size: larger; cursor: pointer;">
+            <td id="H_tab" onclick="showHome();">&#x1F3E0;</td>
+            <td id="C_tab" onclick="showCart();">&#x1F6D2;</td>
+            <td id="M_tab" onclick="showMap();">&#x1F30F;</td>
+            <td id="N_tab" onclick="showNews();">&#x1F4F0;</td>
+            <td id="CC_tab" onclick="showComments();">&#x1F64B;</td>
+            <td id="R_tab" onclick="showReg();">Register</td>
+            <td id="login_tab" onclick="showlogin();">LOGIN</td>
+        </tr>
+    </table>
+    <hr size="larger" color="black" />
+
+    <div id="Home">
+        <h1 class="apro">HOME PAGE</h1>
+        <p>Dear customers, welcome to Dunedin Dairy Online Shop! We provide excellent service experience. We are open 24/7. We sold most of things in dairy life with good quality and health! </p>
+        <h1 id="FD">Free Delivery for $30 !</h1>
+        <img src="https://www.health.harvard.edu/media/content/images/p8_DairyFoods_H1901_gi911727186.jpg" width="500" height="350" alt=milk />
+        <p style="font-size: small;">&copy; Dunedin Dairy</p>
+    </div>
+
+    <div id="Product">
+        <div id="Photo"></div>
+        <input type="text" oninput="searchProduct()" id="ProductName" value="" />
+        <table id="OurTable"></table> 
+        
+    </div>
+
+    <div id="Map">
+        <h1 class="apro"> Location</h1>
+        <img src="http://redsox.uoa.auckland.ac.nz/ds/map.png" width="500" height="350" alt="map" />
+        <h1>535 Pine Hill Road Dunedin New Zealand</h1>
+        <p style="cursor: pointer;">info@DunedinDairy.co.nz</p>
+        <p style="cursor: pointer;">+64 232 121324</p>
+        <p style="cursor: pointer;">add us to your address book</p>
+    </div>
+
+    <div id="News">
+        
+    </div>
+    <div id="Comments">
+        <h1 class="apro">Guest Book</h1>
+        <input type="text" id="comment"  value="" />
+        <br />
+        Name:<input type="text" id="name" value="" /><input type="button" onclick="postComment()" value="Comment" />
+        <br />
+        <iframe src="http://redsox.uoa.auckland.ac.nz/ds/DairyService.svc/htmlcomments" id="iframe"></iframe>
+
+    </div>
+
+    <div id="Re" style="text-align: center;">
+        <h1>Register with us!</h1>
+        
+        <lable for="name">Username</lable>
+        <br/>
+        <input type="text" id="name1" value="">
+        <br/>
+        <lable for="ps">Password</lable>
+        <br/>
+        <input type="password" id="ps" value="">
+        <br/>
+        
+        
+        <lable for="ad">Address</lable>
+        <br/>
+        <input type="text" id="ad" value="">
+        <br/>
+        <input  type="button" onclick="postRegister()" value="Register" />
+    </div>
+    
+    <div id="login" style="text-align: center;">
+        <h1>Please Login</h1>
+        
+        <lable for="logname">Username</lable>
+        <br/>
+        <input type="text" id="logname" value="">
+        <br/>
+        <lable for="logps">Password</lable>
+        <br/>
+        <input type="password" id="logps" value="">
+        <br/>
+        <input  type="button" onclick="login()" value="Login" />
+    </div>
+    
+    
+</body>
+</html>
