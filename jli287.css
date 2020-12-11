@@ -1,0 +1,24 @@
+#title {font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color:brown;text-align:center }
+
+.center {display: block;
+        margin-left:auto;
+        margin-right:auto;
+        }
+#FD {font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:red}
+
+body {
+    background-color: lightpink;
+}
+
+        #comment {
+        width:500px;
+        height:200px;
+        }
+
+.apro{ font-family: Georgia, 'Times New Roman', Times, serif;
+        color:blue;
+        
+
+
+}
